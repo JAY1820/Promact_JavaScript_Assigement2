@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Employee Management System</h1>
+      <!-- Add Employee Form -->
+      <form id="addEmployeeForm">
+        <input type="text" id="name" placeholder="Name" />
+        <input type="text" id="address" placeholder="Address" />
+        <input type="number" id="employeeId" placeholder="Employee ID" />
+        <input type="text" id="designation" placeholder="Designation" />
+        <button type="button" onclick="addEmployee()">Add Employee</button>
+      </form>
+
+      <!-- Employee Table -->
+      <table id="employeeTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>ID</th>
+            <th>Designation</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      
+      <!-- Edit Employee Form -->
+      <form id="editEmployeeForm" style="display: none">
+        <input type="text" id="editName" placeholder="Name" />
+        <input type="text" id="editAddress" placeholder="Address" />
+        <input
+          type="text"
+          id="editEmployeeId"
+          placeholder="Employee ID"
+          readonly
+        />
+        <input type="text" id="editDesignation" placeholder="Designation" />
+        <button type="button" onclick="saveEditedEmployee()">Save</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
