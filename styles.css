@@ -1,3 +1,4 @@
+/* Global styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -9,6 +10,7 @@ body {
   height: 100vh;
 }
 
+/* container styles */
 .container {
   background: rgba(255, 255, 255, 0.38);
   border-radius: 16px;
@@ -22,12 +24,14 @@ body {
   transition: all 0.3s ease;
 }
 
+/* heading styles */
 h1 {
   color: #333;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
 }
 
+/* Styles for focused input and select elements */
 input,
 select {
   width: calc(100% - 20px);
@@ -43,6 +47,8 @@ select:focus {
   outline: none;
   border-color: #007bff;
 }
+
+/* Button styles */
 button {
   background-color: #007bff;
   color: white;
@@ -52,7 +58,7 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
+/* Styles for hovered buttons */
 button:hover {
   background-color: #0056b3;
   transform: scale(1.1);
@@ -62,6 +68,7 @@ button:hover {
   background-color: #9fc2e7;
 }
 
+/* Table styles */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -82,6 +89,7 @@ th {
 td {
   text-align: left;
 }
+
 input:focus,
 select:focus {
   outline: none;
@@ -89,12 +97,17 @@ select:focus {
   box-shadow: 0 0 5px #007bff;
   transition: box-shadow 0.3s ease;
 }
+/* Styles for hovered containers */
 .container:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
+/* Styles for the body element */
 body {
   background: linear-gradient(to right, #f4f4f4, #007bff);
 }
+
+/* Styles for the delete button */
 .delete-button {
   margin: 2.5px 0px 5px;
 }
